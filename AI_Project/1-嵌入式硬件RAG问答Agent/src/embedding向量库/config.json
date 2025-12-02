@@ -1,0 +1,57 @@
+{
+  "model_name": "text-embedding-v2",
+  "embedding_dim": 1536,
+  "total_documents": 533,
+  "processed_files": {
+    "F30激光雷达产品手册_ 250924.pdf": {
+      "hash": "54dd0bcb1bc540626cfdad242fe6606b",
+      "mtime": 1760671726.0,
+      "chunk_count": 38
+    },
+    "Hawk demo和收发模组介绍.pptx": {
+      "hash": "30802c524df0a7ea8d26762c9c2ae6db",
+      "mtime": 1761222900.0,
+      "chunk_count": 14
+    },
+    "HAWK_LIDAR_RX-TX_MINIMODULE-1V0-20241011.pdf": {
+      "hash": "e7c8103ba4ad7e0464d5ff6dd283bd5c",
+      "mtime": 1761222892.0,
+      "chunk_count": 49
+    },
+    "HAWK_MINIDEMO_MCU-1V1-20250409.pdf": {
+      "hash": "0e3fc235788d5761347053966c37301e",
+      "mtime": 1761222892.0,
+      "chunk_count": 53
+    },
+    "KP_06S_V1.0_0925_soc.pdf": {
+      "hash": "abeaa9cab31f027b0173dd14b6b6a1e6",
+      "mtime": 1761222890.0,
+      "chunk_count": 238
+    },
+    "TH-MS01第二版硬件IIC总线设计说明.docx": {
+      "hash": "c1b08f5b42572500fafe8bc1ce38bf05",
+      "mtime": 1762131578.0,
+      "chunk_count": 1
+    },
+    "Hawk_dTOF_ModuleSpec.xlsx": {
+      "hash": "3e26c2d6c4ac50dc3d077344207ec431",
+      "mtime": 1762777510.0,
+      "chunk_count": 42
+    },
+    "TH_S02协议参数配置.docx": {
+      "hash": "2ae8effb29ac04ed6712eec01e4c5abd",
+      "mtime": 1763450452.0,
+      "chunk_count": 44
+    },
+    "TH_S01传输协议.docx": {
+      "hash": "0d4c32a79d0f8096843c8daa88da269e",
+      "mtime": 1759196712.0,
+      "chunk_count": 28
+    },
+    "TH-S011 激光雷达产品手册_2510.docx": {
+      "hash": "de9accbd1f69400672141ad6199d5d94",
+      "mtime": 1763515000.0,
+      "chunk_count": 26
+    }
+  }
+}

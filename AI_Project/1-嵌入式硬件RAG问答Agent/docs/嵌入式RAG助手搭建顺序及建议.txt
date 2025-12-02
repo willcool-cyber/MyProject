@@ -1,0 +1,21 @@
+阶段1：基础RAG（已完成✅）
+  - RAG数据库（FAISS + SentenceTransformer）
+  - 文档解析和向量化
+
+阶段2：LLM集成（下一步👈）
+  - 接入大语言模型（OpenAI API / 本地模型）
+  - 实现RAG生成式问答
+
+阶段3：LangChain框架（进阶）
+  - 使用LangChain重构代码
+  - 添加对话记忆
+  - 实现Agent智能体
+
+阶段4：Tools工具链（高级）
+  - 硬件参数计算工具
+  - 规格对比工具
+  - 联网搜索工具
+
+阶段5：用户界面（最终）
+  - Web界面开发
+  - API服务部署
