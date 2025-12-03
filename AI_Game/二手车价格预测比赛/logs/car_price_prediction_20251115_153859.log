@@ -1,0 +1,64 @@
+2025-11-15 15:38:59,845 - src.utils - INFO - 日志系统初始化完成，日志文件: logs\car_price_prediction_20251115_153859.log
+2025-11-15 15:38:59,846 - src.utils - INFO - 开始二手车价格预测任务
+2025-11-15 15:38:59,848 - src.data_processor - INFO - 开始加载数据...
+2025-11-15 15:39:00,768 - src.data_processor - INFO - 训练数据加载成功: (150000, 31)
+2025-11-15 15:39:01,058 - src.data_processor - INFO - 测试数据A加载成功: (50000, 30)
+2025-11-15 15:39:01,369 - src.data_processor - INFO - 测试数据B加载成功: (50000, 30) (文件: used_car_testB_20200421.csv)
+2025-11-15 15:39:01,386 - src.data_processor - INFO - 合并后测试数据: (100000, 30)
+2025-11-15 15:39:01,389 - src.data_processor - INFO - 开始数据清洗...
+2025-11-15 15:39:01,582 - src.data_processor - INFO - 数据清洗完成
+2025-11-15 15:39:01,582 - src.data_processor - INFO - 开始数据清洗...
+2025-11-15 15:39:01,684 - src.data_processor - INFO - 数据清洗完成
+2025-11-15 15:39:01,684 - src.data_processor - INFO - 预处理完成 - 训练数据: (150000, 31), 测试数据: (100000, 30)
+2025-11-15 15:39:01,685 - src.feature_engineer - INFO - 开始特征工程...
+2025-11-15 15:39:01,748 - src.feature_engineer - INFO - 创建时间特征...
+2025-11-15 15:39:01,781 - src.feature_engineer - INFO - 创建时间特征...
+2025-11-15 15:39:01,802 - src.feature_engineer - INFO - 创建交互特征...
+2025-11-15 15:39:02,260 - src.feature_engineer - INFO - 创建交互特征...
+2025-11-15 15:39:02,508 - src.feature_engineer - INFO - 创建统计特征...
+2025-11-15 15:39:02,787 - src.feature_engineer - INFO - 创建统计特征...
+2025-11-15 15:39:02,955 - src.feature_engineer - INFO - 编码类别特征...
+2025-11-15 15:39:05,769 - src.feature_engineer - INFO - 创建目标编码特征...
+2025-11-15 15:39:05,969 - src.feature_engineer - INFO - 特征工程完成 - 特征数量: 45
+2025-11-15 15:39:05,970 - src.feature_engineer - INFO - 训练数据形状: (150000, 45), 测试数据形状: (100000, 45)
+2025-11-15 15:39:05,992 - src.model_trainer - INFO - 开始训练所有模型...
+2025-11-15 15:39:05,993 - src.model_trainer - INFO - 开始训练 LightGBM 模型...
+2025-11-15 15:39:29,088 - src.model_trainer - INFO - LightGBM Fold 1 MAE: 567.9758
+2025-11-15 15:39:53,107 - src.model_trainer - INFO - LightGBM Fold 2 MAE: 569.7420
+2025-11-15 15:40:10,198 - src.model_trainer - INFO - LightGBM Fold 3 MAE: 569.0266
+2025-11-15 15:40:45,174 - src.model_trainer - INFO - LightGBM Fold 4 MAE: 561.9906
+2025-11-15 15:41:20,258 - src.model_trainer - INFO - LightGBM Fold 5 MAE: 561.1761
+2025-11-15 15:41:20,259 - src.model_trainer - INFO - LightGBM 平均 MAE: 565.9822 (+/- 7.2889)
+2025-11-15 15:41:20,275 - src.model_trainer - INFO - 开始训练 XGBoost 模型...
+2025-11-15 15:42:00,500 - src.model_trainer - INFO - XGBoost Fold 1 MAE: 537.3138
+2025-11-15 15:42:41,843 - src.model_trainer - INFO - XGBoost Fold 2 MAE: 538.2488
+2025-11-15 15:43:25,477 - src.model_trainer - INFO - XGBoost Fold 3 MAE: 536.5042
+2025-11-15 15:44:07,052 - src.model_trainer - INFO - XGBoost Fold 4 MAE: 532.1364
+2025-11-15 15:44:53,343 - src.model_trainer - INFO - XGBoost Fold 5 MAE: 529.9337
+2025-11-15 15:44:53,344 - src.model_trainer - INFO - XGBoost 平均 MAE: 534.8274 (+/- 6.4430)
+2025-11-15 15:44:53,360 - src.model_trainer - INFO - 开始训练 CatBoost 模型...
+2025-11-15 15:45:57,428 - src.model_trainer - INFO - CatBoost Fold 1 MAE: 577.9729
+2025-11-15 15:46:56,276 - src.model_trainer - INFO - CatBoost Fold 2 MAE: 578.9661
+2025-11-15 15:47:59,662 - src.model_trainer - INFO - CatBoost Fold 3 MAE: 564.2038
+2025-11-15 15:48:45,126 - src.model_trainer - INFO - CatBoost Fold 4 MAE: 574.2128
+2025-11-15 15:49:42,669 - src.model_trainer - INFO - CatBoost Fold 5 MAE: 573.8675
+2025-11-15 15:49:42,671 - src.model_trainer - INFO - CatBoost 平均 MAE: 573.8446 (+/- 10.4443)
+2025-11-15 15:49:42,681 - src.model_trainer - INFO - 所有模型训练完成
+2025-11-15 15:49:42,686 - src.model_trainer - INFO - lightgbm: MAE=565.9822, Weight=0.328
+2025-11-15 15:49:42,687 - src.model_trainer - INFO - xgboost: MAE=534.8274, Weight=0.348
+2025-11-15 15:49:42,688 - src.model_trainer - INFO - catboost: MAE=573.8446, Weight=0.324
+2025-11-15 15:49:42,690 - src.model_ensemble - INFO - 开始模型融合预测...
+2025-11-15 15:50:00,340 - src.model_ensemble - INFO - lightgbm 预测完成，权重: 0.328
+2025-11-15 15:50:08,310 - src.model_ensemble - INFO - xgboost 预测完成，权重: 0.348
+2025-11-15 15:50:08,898 - src.model_ensemble - INFO - catboost 预测完成，权重: 0.324
+2025-11-15 15:50:08,903 - src.model_ensemble - INFO - lightgbm 融合权重: 0.328
+2025-11-15 15:50:08,907 - src.model_ensemble - INFO - xgboost 融合权重: 0.348
+2025-11-15 15:50:08,913 - src.model_ensemble - INFO - catboost 融合权重: 0.324
+2025-11-15 15:50:08,914 - src.model_ensemble - INFO - 模型融合预测完成
+2025-11-15 15:50:08,923 - src.model_ensemble - INFO - 保存提交文件...
+2025-11-15 15:50:09,762 - src.model_ensemble - INFO - 提交文件已保存到: output\submission.csv
+2025-11-15 15:50:09,765 - src.model_ensemble - INFO - 预测价格统计:
+2025-11-15 15:50:09,773 - src.model_ensemble - INFO -   最小值: -477.19
+2025-11-15 15:50:09,775 - src.model_ensemble - INFO -   最大值: 87352.06
+2025-11-15 15:50:09,775 - src.model_ensemble - INFO -   平均值: 5869.87
+2025-11-15 15:50:09,777 - src.model_ensemble - INFO -   中位数: 3243.70
