@@ -9,7 +9,7 @@ import time
 import base64
 
 warnings.filterwarnings("ignore")
-l
+
 def init_agent_service():
     """初始化具备 Elasticsearch RAG 和网络搜索能力的助手服务"""
     
