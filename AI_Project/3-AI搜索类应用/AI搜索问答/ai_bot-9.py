@@ -42,19 +42,19 @@ def init_agent_service():
 请根据用户的问题，优先利用检索工具从本地知识库中查找最相关的信息。
 如果本地知识库没有相关信息，再使用 tavily_search 工具从互联网上搜索，并结合这些信息给出专业、准确的回答。'''
 
-    tools_cfg = [{
-        "mcpServers": {
-            "tavily-mcp": {
-                "command": "npx",
-                "args": ["-y", "tavily-mcp@0.1.4"],
-                "env": {
-                    "TAVILY_API_KEY": os.getenv('TAVILY_API_KEY', "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")
-                },
-                "disabled": False,
-                "autoApprove": []
-            }
-        }
-    }]
+    # tools_cfg = [{
+    #     "mcpServers": {
+    #         "tavily-mcp": {
+    #             "command": "npx",
+    #             "args": ["-y", "tavily-mcp@0.1.4"],
+    #             "env": {
+    #                 "TAVILY_API_KEY": os.getenv('TAVILY_API_KEY', "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")
+    #             },
+    #             "disabled": False,
+    #             "autoApprove": []
+    #         }
+    #     }
+    # }]
 
     # 获取文件夹下所有文件
     file_dir = os.path.join(os.path.dirname(__file__), 'docs')
@@ -70,7 +70,7 @@ def init_agent_service():
     bot = Assistant(
         llm=llm_cfg,
         system_message=system_instruction,
-        function_list=tools_cfg,
+        # function_list=tools_cfg,
         files=files,
         rag_cfg=rag_cfg
     )
